@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/krre/sprout/interpreter"
+	"github.com/krre/sprout/engine"
 )
 
 func main() {
@@ -15,6 +15,7 @@ func main() {
 	} else if sourcepath, err := filepath.Abs(os.Args[1]); err != nil {
 		fmt.Println("Error command line parse")
 	} else {
-		interpreter.Eval(sourcepath)
+		e := engine.NewEngine()
+		e.Run(sourcepath)
 	}
 }
