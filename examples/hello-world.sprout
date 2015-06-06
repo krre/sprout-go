@@ -1,4 +1,4 @@
 slot: [
-    onCompleted: print "Hello World!
-    onDestruction: print "Bye World!
+    onCompleted: print "Hello World!"
+    onDestruction: print "Bye World!"
 ]
