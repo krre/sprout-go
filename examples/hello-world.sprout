@@ -1,1 +1,4 @@
-print "Hello World"
+slot: [
+    onCompleted: print "Hello World!
+    onDestruction: print "Bye World!
+]
